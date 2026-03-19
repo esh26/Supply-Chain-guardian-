@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>supply-chain-guardian</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="manifest" href="/manifest.json" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fsupplycha4782back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="dhiwise-code" id="root"></div>
+  <script type="module" src="/src/index.jsx"></script>
+
+<!-- BACKEND DEMO INJECTION (added by assistant) - backup created as index.html.bak -->
+<div id="backend-demo" style="position:fixed;right:12px;bottom:12px;background:white;border:1px solid #ddd;padding:12px;z-index:9999;border-radius:8px;font-family:Arial">
+  <h4 style="margin:0 0 8px 0">Backend Demo</h4>
+  <button onclick="fetch('/api/health').then(r=>r.json()).then(j=>alert(JSON.stringify(j)))">Health</button>
+  <button onclick="fetch('/api/items',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:'demo',value:Math.random()})}).then(r=>r.json()).then(j=>alert(JSON.stringify(j)))">Add Item</button>
+  <button onclick="fetch('/api/items').then(r=>r.json()).then(j=>alert(JSON.stringify(j)))">List Items</button>
+  <div style="margin-top:8px">
+    <button onclick="demoCNN()">Demo CNN</button>
+    <button onclick="demoGNN()">Demo GNN</button>
+  </div>
+</div>
+<script>
+function demoCNN(){
+  fetch('/api/predict_cnn',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({array:[1,2,3,4,5], use_torch:false})})
+    .then(r=>r.json()).then(j=>alert(JSON.stringify(j)));
+}
+function demoGNN(){
+  fetch('/api/predict_gnn',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({adj:[[0,1,0],[1,0,1],[0,1,0]], features:[[1,0],[0,1],[1,1]], use_torch:false})})
+    .then(r=>r.json()).then(j=>alert(JSON.stringify(j)));
+}
+</script>
+
+</body>
+
+</html>

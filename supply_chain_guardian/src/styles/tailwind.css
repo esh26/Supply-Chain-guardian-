@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-background: #f9fafb;
+    --color-foreground: #1f2937;
+    --color-card: #ffffff;
+    --color-card-foreground: #1f2937;
+    --color-popover: #ffffff;
+    --color-popover-foreground: #1f2937;
+    --color-primary: #1e40af;
+    --color-primary-foreground: #ffffff;
+    --color-secondary: #475569;
+    --color-secondary-foreground: #ffffff;
+    --color-muted: #f9fafb;
+    --color-muted-foreground: #6b7280;
+    --color-accent: #f59e0b;
+    --color-accent-foreground: #ffffff;
+    --color-destructive: #dc2626;
+    --color-destructive-foreground: #ffffff;
+    --color-success: #059669;
+    --color-success-foreground: #ffffff;
+    --color-warning: #d97706;
+    --color-warning-foreground: #ffffff;
+    --color-error: #dc2626;
+    --color-error-foreground: #ffffff;
+    --color-border: #e5e7eb;
+    --color-input: #ffffff;
+    --color-ring: #1e40af;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+.transition-smooth {
+  transition: all 0.2s ease-in-out;
+}
+
+.shadow-level-1 { box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+.shadow-level-2 { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+.shadow-level-3 { box-shadow: 0 8px 24px rgba(0,0,0,0.12); }

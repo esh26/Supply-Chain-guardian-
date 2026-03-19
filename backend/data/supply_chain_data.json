@@ -1,0 +1,71 @@
+{
+  "suppliers": [
+    {
+      "id": "VN-SUP-01",
+      "name": "Vietnam Mfg A",
+      "country": "Vietnam",
+      "tier": 1,
+      "riskScore": 92,
+      "category": "Electronics",
+      "onTime": 54,
+      "spend": 8.2,
+      "contact": "nguyen.van@vnmfg-a.com",
+      "leadTimeDays": 45
+    },
+    {
+      "id": "TW-SUP-02",
+      "name": "Taiwan Semi Corp",
+      "country": "Taiwan",
+      "tier": 1,
+      "riskScore": 75,
+      "category": "Semiconductors",
+      "onTime": 71,
+      "spend": 12.4,
+      "contact": "chen.wei@twsemi.com",
+      "leadTimeDays": 90
+    },
+    {
+      "id": "JP-SUP-03",
+      "name": "Japan Precision",
+      "country": "Japan",
+      "tier": 1,
+      "riskScore": 45,
+      "category": "Precision Parts",
+      "onTime": 91,
+      "spend": 6.3,
+      "contact": "tanaka@jpprecision.jp",
+      "leadTimeDays": 30
+    },
+    {
+      "id": "DE-SUP-06",
+      "name": "Germany Auto Parts",
+      "country": "Germany",
+      "tier": 2,
+      "riskScore": 30,
+      "category": "Auto Parts",
+      "onTime": 96,
+      "spend": 4.8,
+      "contact": "mueller@deauto.de",
+      "leadTimeDays": 21
+    }
+  ],
+  "alerts": [
+    {
+      "id": 1,
+      "severity": "critical",
+      "title": "Supplier Disruption — Southeast Asia",
+      "description": "Factory shutdowns reported due to flooding in Vietnam.",
+      "category": "Supplier",
+      "timestamp": "2025-03-11T08:30:00Z"
+    },
+    {
+      "id": 2,
+      "severity": "high",
+      "title": "Port Congestion — Shanghai",
+      "description": "Average container dwell time has increased to 14 days.",
+      "category": "Logistics",
+      "timestamp": "2025-03-11T08:15:00Z"
+    }
+  ],
+  "predictions": []
+}
