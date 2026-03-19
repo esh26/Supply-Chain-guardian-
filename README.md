@@ -42,6 +42,9 @@ supply_chain_guardian_all_done/
 
 ---
 
+## 🎥 Project Demo
+[Watch Demo Video](https://drive.google.com/file/d/1QwesshfuRyaL0A9EQ2q6p1pX5jwQQ-KO/view?usp=drive_link)
+
 ## 🚀 How to Run
 
 ### Step 1 — Run the Frontend
